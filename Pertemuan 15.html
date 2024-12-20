@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <script>
+      // JavaScript to dynamically create the webpage
+      document.addEventListener("DOMContentLoaded", function () {
+        // Create main container
+        const container = document.createElement("div");
+        container.style.fontFamily = "Arial, sans-serif";
+        container.style.margin = "20px";
+        container.style.padding = "10px";
+        container.style.border = "1px solid red";
+        container.style.textAlign = "center";
+
+        // Title
+        const title = document.createElement("h1");
+        title.style.color = "blue";
+        title.textContent = 'WEBSITE Profile "Axel Mulya"';
+        container.appendChild(title);
+
+        // Profile Picture
+        const profileImage = document.createElement("img");
+        profileImage.src = "Pas foto.jpg"; // Placeholder for image
+        profileImage.alt = "Profile Picture";
+        profileImage.style.borderRadius = "50%";
+        profileImage.style.margin = "20px 0";
+        profileImage.style.width = "180px"; // Set width to 150px
+        profileImage.style.height = "150px"; // Set height to 150px
+
+        container.appendChild(profileImage);
+
+        // Information List
+        const infoList = document.createElement("ul");
+        infoList.style.listStyleType = "none";
+        infoList.style.padding = "0";
+        infoList.style.textAlign = "left";
+        infoList.style.margin = "0 auto";
+        infoList.style.display = "inline-block";
+
+        const infoItems = [
+          "1. NIM: 241011700510",
+          "2. Nama: Muhammad Axel Mulya",
+          "3. Kelas: 01SIFP016",
+          "4. Program Studi: Sistem Informasi",
+          "5. Alamat: Mutiara residence no 87",
+          "6. Asal Sekolah: SMAN 6 DEPOK",
+          "7. Jurusan: MIPA",
+          "8. Email: maxelmulyaa@gmail.com",
+          "9. Telepon: 0895335420088",
+        ];
+
+        infoItems.forEach((item) => {
+          const listItem = document.createElement("li");
+          listItem.textContent = item;
+          infoList.appendChild(listItem);
+        });
+
+        container.appendChild(infoList);
+
+        // Footer
+        const footer = document.createElement("p");
+        footer.style.marginTop = "20px";
+        footer.style.fontSize = "12px";
+        footer.style.color = "gray";
+        footer.textContent =
+          "Design by Muhammad Axel Mulya © 2024 All Rights Reserved";
+        container.appendChild(footer);
+
+        // Append to body
+        document.body.appendChild(container);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
