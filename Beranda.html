@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporin Homepage</title>
+  <link rel="stylesheet" href="beranda.css">
+  <script src="carousel.js"></script>
+  <script
+  src="https://kit.fontawesome.com/18a120ed20.js"
+  crossorigin="anonymous"
+></script>
+
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/logolaporin.png" alt="Logo">
+    </div>
+    <div class="nama">LAPORIN</div>
+    <ul>
+      <li><a href="index.php">Beranda</a></li>
+      <li><a href="index.php">Laporin</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero-section">
+    <div class="carousel">
+        <div class="carousel-images">
+          <img src="slide1.jpg" alt="Slide 1">
+          <img src="slide2.jpg" alt="Slide 2">
+          <img src="slide3.jpg" alt="Slide 3">
+        </div>
+        <!-- Navigation buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+      
+    <div class="hero-text">
+      <h1>Layanan Pengaduan UNPAM</h1>
+      <p>Sampaikan laporan Anda langsung kepada kami</p>
+      <a href="index.php" class="cta-button">Ajukan Pengaduan</a>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>

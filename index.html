@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAPORIN</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script
+      src="https://kit.fontawesome.com/18a120ed20.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="images/logolaporin.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logolaporin.png" alt="Logo" />
+        </div>
+        <div class="nama">
+          <h1>LAPORIN</h1>
+        </div>
+        <ul>
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="index.php">Laporin</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>Layanan Pengaduan UNPAM!</h1>
+        <p>Sampaikan laporan Anda langsung kepada Kami</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/unpam.png" />
+      </div>
+    </div>
+
+    <div class="contact-container" id="laporin">
+      <form
+        action="submit_complaint.php"
+        method="POST"
+        enctype="multipart/form-data"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Sampaikan Laporan Anda</h2>
+        </div>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="contact-inputs"
+          required
+        />
+        <select name="category" class="contact-inputs" required>
+          <option value="" disabled selected>Choose a Category</option>
+          <option value="Infrastructure">Infrastructure</option>
+          <option value="Academic">Academic</option>
+          <option value="Services">Services</option>
+        </select>
+        <textarea
+          name="message"
+          placeholder="YOUR MESSAGE"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <input
+          type="file"
+          name="image"
+          accept="image/*"
+          class="contact-inputs"
+          required
+        />
+        <button type="submit">SUBMIT</button>
+      </form>
+      <div class="contact-right">
+        <img src="images/logolaporin.png" />
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="col">
+          <a href="index.html"
+            ><img src="images/logolaporin.png" alt="Logo" class="logofooter"
+          /></a>
+        </div>
+        <div class="col">
+          <h3>Office</h3>
+          <p>jl.viktor</p>
+          <p>tangsel</p>
+          <p class="email-id">laporinunpam@gmail.com</p>
+          <h4>0213-3344-4888</h4>
+        </div>
+        <div class="col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Laporin</a></li>
+            <li><a href="">Tentang</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Saran</h3>
+          <form>
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="enter your email id" required />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right fa-xl" style="color: white"></i>
+            </button>
+          </form>
+          <div class="social-icons">
+            <i class="fa-brands fa-instagram fa-lg" style="color: #000000"></i>
+            <i class="fa-brands fa-facebook fa-lg" style="color: #000000"></i>
+            <i class="fa-brands fa-tiktok fa-lg" style="color: #000000"></i>
+            <i class="fa-brands fa-twitter fa-lg" style="color: #000000"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
